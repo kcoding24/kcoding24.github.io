@@ -1,6 +1,6 @@
 body {
   margin: auto;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 .horiz-rule-style {
@@ -21,7 +21,6 @@ h1 {
 
 .typingAnimation {
   font-family: 'Scope One', serif;
-  /* font-family: 'Cutive Mono', monospace; */
   font-weight: lighter;
   font-size: 3.7vw;
   padding-left: 20px;
@@ -53,13 +52,13 @@ h2 {
 .feature-work {
   font-family: 'Scope One', serif;
   font-weight: normal;
-  width: 90%;
-  height: 400px;
+  width: 320px;
+  height: 295px;
   margin: 10px auto;
   padding: 5px;
   border: 1px solid silver;
   border-radius: 10px;
-  overflow: scroll;
+  overflow: hidden;
 }
 img {
   width: 100%;
@@ -73,6 +72,30 @@ h3 {
   margin: 5px;
   font-size: 5vw;
   text-align: center;
+  position: relative;
+
+}
+.feature-work:hover .show-details {
+  animation: text-moveup 0.5s;
+  animation-fill-mode: forwards;
+}
+.feature-work:hover img {
+  animation: change-opacity 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes text-moveup {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+@keyframes change-opacity {
+  100% {
+    opacity: 0.3;
+  }
 }
 h4, p {
   font-family: 'Scope One', serif;
