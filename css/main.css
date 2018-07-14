@@ -1,12 +1,13 @@
 body {
   margin: auto;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .horiz-rule-style {
 	height: 10px;
 	border: 0;
 	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -21,7 +22,7 @@ h1 {
 .typingAnimation {
   font-family: 'Cutive Mono', monospace;
   font-weight: lighter;
-  font-size: 3.8vw;
+  font-size: 3.7vw;
   padding-left: 20px;
   margin: 5px;
   overflow: hidden;
@@ -35,11 +36,22 @@ h1 {
 @keyframes typing {
   0% {width: 0%;}
   35%{width: 50%;}
-  70% {width: 100%;}
-  100% {width: 100%;}
+  70% {width: 90%;}
+  100% {width: 90%;}
   }
+h2 {
+  font-family: 'Cutive Mono', monospace;
+  font-weight: normal;
+  font-size: 5vw;
+  text-align: center;
+  background-color: #1e3047;
+  margin: 0 10px 10px 10px;
+  color: white;
+}
 
 .featureWork {
+  font-family: 'Cinzel', serif;
+  font-weight: normal;
 }
 
 h3 {
